@@ -1,0 +1,119 @@
+#_______ _            _        _
+#|__   __| |          | |      | |
+#| |  | | ___   ___| |_ __ _| |_ ___
+#| |  | |/ _ \ / __| __/ _` | __/ _ \
+#| |  | | (_) | (__| || (_| | || (_) |
+#|_|  |_|\___/ \___|\__\__,_|\__\___/
+#Creator plugin TiLock, если вам понравился плагин оставьте, пожалуйста, отзыв на spigotmc.ru
+#Буду очень благодарен!
+#Ds: https://discord.gg/yQ58jzNyZ6
+items:
+  diz:
+    material: ENDER_EYE # Материал, который будет отвечать за придмет
+    custom_model_data: 1 #НЕ ТРОГАТЬ!
+    name: "&bДезоринтация" #Название придмета
+    radius: 10 #Радиус действия эффектов и частиц
+    cooldown: 15 #Перезарядка придметов в секундах!
+    effects:
+      blindness: 15 #Время эффекта в секундах
+      wither: 5 #Время эффекта в секундах
+      slowness: 15 #Время эффекта в секундах
+      fatigue: 10 #Время эффекта в секундах
+      glow: 15
+    sound: ENTITY_WITHER_SPAWN #Звук, который будет производиться при использовании
+    sound_volume: 1.0 #Сила звука
+    sound_pitch: 1.0
+    particle_type: SPELL #Тип партиклов, сайт где их можно найти https://minecraft.fandom.com/ru/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%B8%D1%86%D1%8B
+    particle_count: 100 #Количиство партиклов которые будет появляются
+    particle_offset: 0.1
+    glow: false #Включено ли свечение придмета?
+
+  dust:
+    material: SUGAR # Материал, который будет отвечать за придмет
+    custom_model_data: 2 #НЕ ТРОГАТЬ!
+    name: "&fПросветление" #Название придмета
+    radius: 15 #Радиус действия эффектов и частиц
+    cooldown: 15 #Перезарядка придметов в секундах!
+    effects:
+      glow: 25 #Время эффекта в секундах
+    sound: ENTITY_ENDER_DRAGON_AMBIENT #Звук, который будет производиться при использовании
+    sound_volume: 1.0 #Сила звука
+    sound_pitch: 1.0
+    particle_type: SPELL_MOB #Тип партиклов, сайт где их можно найти https://minecraft.fandom.com/ru/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%B8%D1%86%D1%8B
+    particle_count: 100 #Количиство партиклов которые будет появляются
+    particle_offset: 0.1
+    glow: true #Включено ли свечение придмета?
+
+  feer:
+    material: NETHER_STAR # Материал, который будет отвечать за придмет
+    custom_model_data: 3 #НЕ ТРОГАТЬ!
+    name: "&cКруговорот" #Название придмета
+    radius: 10 #Радиус действия эффектов и частиц
+    cooldown: 15 #Перезарядка придметов в секундах!
+    effects:
+      levitation: 10 #Время эффекта в секундах
+      glow: 15 #Время эффекта в секундах
+      blindness: 10 #Время эффекта в секундах
+    sound: ENTITY_SHULKER_TELEPORT #Звук, который будет производиться при использовании
+    sound_volume: 1.0 #Сила звука
+    sound_pitch: 1.0
+    particle_type: FLAME #Тип партиклов, сайт где их можно найти https://minecraft.fandom.com/ru/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%B8%D1%86%D1%8B
+    particle_count: 100 #Количиство партиклов которые будет появляются
+    particle_offset: 0.1
+    glow: false #Включено ли свечение придмета?
+
+  smerch:
+    material: BLAZE_POWDER # Материал, который будет отвечать за придмет
+    custom_model_data: 4 #НЕ ТРОГАТЬ!
+    name: "&4Огненная буря" #Название придмета
+    radius: 15 #Радиус действия эффектов и частиц
+    cooldown: 15 #Перезарядка придметов в секундах!
+    effects:
+      glow: 25 #Время эффекта в секундах
+      fire: true #Время эффекта в секундах
+    sound: ENTITY_BLAZE_SHOOT #Звук, который будет производиться при использовании
+    sound_volume: 1.0 #Сила звука
+    sound_pitch: 1.0
+    particle_type: FLAME #Тип партиклов, сайт где их можно найти https://minecraft.fandom.com/ru/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%B8%D1%86%D1%8B
+    particle_count: 100 #Количиство партиклов которые будет появляются
+    particle_offset: 0.1
+    glow: false #Включено ли свечение придмета?
+
+  handaura:
+    name: "&bПоглощение Эффектов"  # Название предмета
+    material: "PHANTOM_MEMBRANE"  # Материал, который будет отвечать за придмет
+    cooldown: 60  #Перезарядка придметов в секундах!
+    radius: 5  # Радиус действия ауры
+
+    effects:
+      absorption: 20  #Время эффекта в секундах
+      absorption_amplifier: 0  # Усиление эффекта поглощения (0 = уровень 1)
+
+      strength: 180  #Время эффекта в секундах
+      strength_amplifier: 2  # Усиление эффекта силы (2 = уровень 3)
+
+      speed: 180  #Время эффекта в секундах
+      speed_amplifier: 2  # Усиление эффекта скорости (2 = уровень 3)
+
+      regeneration: 20  #Время эффекта в секундах
+      regeneration_amplifier: 1  # Усиление эффекта регенерации (1 = уровень 2)
+
+      glow: 10  #Время эффекта в секундах
+      haste: 20  #Время эффекта в секундах
+      haste_amplifier: 0  # Усиление эффекта спешки (0 = уровень 1)
+
+    particle_type: "SPELL_WITCH" #Тип партиклов, сайт где их можно найти https://minecraft.fandom.com/ru/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%B8%D1%86%D1%8B
+    particle_count: 100  # Количество частиц
+    particle_offset: 0.1
+
+    glow: true  # Включить или отключить свечение
+    sound: "ENTITY_WITCH_AMBIENT"  # Звук при использовании
+    sound_volume: 1.0  # Громкость звука
+    sound_pitch: 1.0
+
+    #Миры в которах плагин будет отключяться (по типу спавна)
+    disabled_worlds:
+      - spawn
+      - world_the_end
+
+    #Заходи в дискорд сервер создателя там плагины выходят раньше! Ds: https://discord.gg/yQ58jzNyZ6

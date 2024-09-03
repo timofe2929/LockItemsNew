@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LockItemsNEW:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/LockItemsNEW_jar2</output-path>
+    <root id="archive" name="LockItemsNEW.jar">
+      <element id="module-output" name="LockItemsNEW" />
+    </root>
+  </artifact>
+</component>

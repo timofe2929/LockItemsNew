@@ -1,0 +1,39 @@
+name: LockItemsNew
+version: 1.0
+main: org.lockitemsnew.LockItemsNew
+api-version: 1.16
+
+commands:
+  lockitemsnew:
+    description: "Основная команда для управления предметами"
+    usage: "/lockitemsnew <give|reload> [придмет/diz/smerch/feer/dust/handaura][игрок] [количиство]"
+    permission: lockitemsnew.use
+    permission-message: "У вас нет прав для выполнения этой команды."
+
+  lockitemsnew_give:
+    description: "Выдаёт предмет игроку"
+    usage: "/lockitemsnew give <придмет/diz/smerch/feer/dust/handaura> <ирокr> <количиство>"
+    permission: lockitemsnew.give
+    permission-message: "У вас нет прав для выполнения этой команды."
+
+  lockitemsnew_reload:
+    description: "Перезагружает конфигурацию плагина"
+    usage: "/lockitemsnew reload"
+    permission: lockitemsnew.reload
+    permission-message: "У вас нет прав для выполнения этой команды."
+  aura:
+    description: "Выдать Поглотитель эффектов"
+    usage: "/<command>"
+
+permissions:
+  lockitemsnew.use:
+    description: "Основное разрешение для использования команды lockitemsnew"
+    default: op
+
+  lockitemsnew.give:
+    description: "Разрешение для использования команды выдачи предметов"
+    default: op
+
+  lockitemsnew.reload:
+    description: "Разрешение для использования команды перезагрузки"
+    default: op
